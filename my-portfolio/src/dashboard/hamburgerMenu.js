@@ -15,12 +15,30 @@ const Container = styled.div`
 const HamburgerButton = styled.div` 
     position: relative;
     z-index: 99;
+    .fa-bars {
+    color: #54e346;
+    font-size: 40px;
+    cursor: pointer;
+    background: #120078; 
+    padding: 5px;
+
+
+}
     `
 
 const CloseButton = styled.div` 
     margin: 0 0 40px 0;
     display: flex;
     justify-content: flex-start;
+    .fa-times {
+    color: #6f4a8e;
+    font-size: 40px;
+    cursor: pointer;
+    background: #050505; 
+    padding: 5px;
+
+
+}
     `
 
 const HamburgerMenuNav = styled.nav` 

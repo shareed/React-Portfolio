@@ -47,10 +47,10 @@ function Dashboard() {
                   <Link>About</Link>
            </Dashdiv>
         
-        <Menu/>
+        {/* <Menu/>
         <Projects/>
         <Skills/>
-        <About/>
+        <About/> */}
         </Portfolio>
      )
   }

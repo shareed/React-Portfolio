@@ -14,3 +14,8 @@ _____________________
 #### Dependecies
 - React Router
 - React Router Dom
+- Styled Components
+- Font Awesome
+__________
+#### Style Guide
+**Color Scheme** ![Color Scheme](/projectassets/colorsch.png)

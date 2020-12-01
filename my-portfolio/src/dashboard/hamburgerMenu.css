@@ -11,7 +11,7 @@
     }
 } */
 
-.fa-bars, .fa-times {
+/* .fa-bars, .fa-times {
     color: #6f4a8e;
     font-size: 40px;
     cursor: pointer;
@@ -19,7 +19,7 @@
     padding: 5px;
 
 
-}
+} */
 
 .hamburger-menu-nav {
     width: 50vw;
@@ -67,9 +67,9 @@
     z-index: 99;
 } */
 
-.fa-times {
+/* .fa-times {
     font-size: 50px;
-}
+} */
 
 /* .hamburger-menu-close-button {
     margin: 0 0 40px 0;
