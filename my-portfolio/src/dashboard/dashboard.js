@@ -34,6 +34,42 @@ const Dashdiv = styled.div`
       }
 
    }
+   @media(min-width: 900px){
+      width: 32vw;
+   }
+   @media(min-width: 1000px){
+      width: 30vw;
+   }
+   @media(min-width: 1100px){
+      width: 28vw;
+   }
+   @media(min-width: 1200px){
+      width: 26vw;
+   }
+   @media(min-width: 1300px){
+      width: 24vw;
+   }
+   @media(min-width: 1400px){
+      width: 22vw;
+   }
+   @media(min-width: 1500px){
+      width: 20vw;
+   }
+   @media(min-width: 1600px){
+      width: 18vw;
+   }
+   /* @media(min-width: 1700px){
+      width: 16vw;
+   } */
+   /* @media(min-width: 1800px){
+      width: 14vw;
+   } */
+   /* @media(min-width: 1900px){
+      width: 12vw;
+   }
+   @media(min-width: 2000px){
+      width: 10vw;
+   } */
    
 `
 
