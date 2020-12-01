@@ -59,7 +59,7 @@ const HamburgerMenuNav = styled.nav`
     `
 
 const MenuList = styled.ul` 
-    background: #221F3B;
+    background: #120078;
     padding: 0;
     margin-top: 1.8rem;
     font-size: 2.5rem;
