@@ -27,12 +27,6 @@ const Dashdiv = styled.div`
       height: 100vh;
       width: 35vw;
       background-color: #120078;
-    
-      
-      /* text-align: center; */
-      /* opacity: 40%; */
-      /* font-size: 3.2rem; */
-      /* color: white; */
       a {
          text-decoration: none;
          color: white;
@@ -53,7 +47,6 @@ const Header = styled.header`
    border-bottom: .3rem outset #FECD1A;
    `
 
-
 const MyImage = styled.img` 
    width: 10rem;
    height: 10rem;
@@ -61,7 +54,6 @@ const MyImage = styled.img`
    -webkit-border-radius: 5rem;
    -moz-border-radius: 5rem;
    `
-
 
 const IntroDiv = styled.div` 
    flex-basis: 70%;
@@ -90,26 +82,32 @@ const Icons = styled.div`
 
 const LinkContainer = styled.div` 
    display: flex;
-   /* justify-content: space-between; */
    `
 
+const LinkIconContainer = styled.div` 
+   width: 4vw;
+   margin-right: 1rem;
+`
+
+const LinkTextContainer = styled.div`
+   padding-top:.3rem;
+`
+
+const ImageIcons = styled.div``
 
 const MenuLinks = styled.div` 
-border: 2px solid red;
    height: 30vh;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         a {
-            padding: 1rem;
-            font-size: 2rem;
-            :hover{
-               background: red;
-            }
-         }
-         .faHome {
-               margin-right: 2rem;
-            }
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   a {
+      padding: 1rem;
+      font-size: 2rem;
+      :hover{
+         background: #9D0191;
+         border-right: .5rem solid #FECD1A;
+      }
+   }
 `
 
 
@@ -119,49 +117,74 @@ function Dashboard() {
            <HamburgerMenu />
            <Dashdiv >
               <Header>
-                 <div>
-               <MyImage src = { me }/>
-               <Icons>
-               <FontAwesomeIcon icon={faTwitter} />
-               <FontAwesomeIcon icon={faLinkedin} />
-               <FontAwesomeIcon icon={faGithub} />
-               </Icons>
-               </div>
+               <ImageIcons>
+                  <MyImage src = { me }/>
+                  <Icons>
+                     <FontAwesomeIcon icon={faTwitter} />
+                     <FontAwesomeIcon icon={faLinkedin} />
+                     <FontAwesomeIcon icon={faGithub} />
+                  </Icons>
+               </ImageIcons>
                <IntroDiv>
-               <MyNameIntro>Shannon Reed</MyNameIntro>
-               <MyIntro>Full Stack Web Developer</MyIntro>
+                  <MyNameIntro>Shannon Reed</MyNameIntro>
+                  <MyIntro>Full Stack Web Developer</MyIntro>
                </IntroDiv>
              </Header>
                   <MenuLinks >
                      <Link>
                         <LinkContainer>
-                        <FontAwesomeIcon icon={ faHome } />
-                        Home
-                        </LinkContainer>
-                     </Link>
-                     {/* <Link>Menu</Link> */}
-                     <Link>
-                        <LinkContainer>
-                        <FontAwesomeIcon icon={faProjectDiagram} />
-                        Projects
-                        </LinkContainer>
-                     </Link>
-                     <Link>
-                        <LinkContainer>
-                        <FontAwesomeIcon icon={faTasks} />
-                        Skills
+                           
+                           <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={ faHome } />
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>Home</h2>
+                           </LinkTextContainer>
+                          
                         </LinkContainer>
                      </Link>
                      <Link>
                         <LinkContainer>
-                        <FontAwesomeIcon icon={faUser}/>
-                        About
+                           <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={faProjectDiagram} />
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>Projects</h2>
+                           </LinkTextContainer>
+                           
+                        </LinkContainer>
+                     </Link>
+                     <Link>
+                        <LinkContainer>
+                           <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={faTasks} />
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>Skills</h2>
+                           </LinkTextContainer>
+                           
+                        </LinkContainer>
+                     </Link>
+                     <Link>
+                        <LinkContainer>
+                           <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={faUser}/>
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>About</h2>
+                           </LinkTextContainer>
+                           
                         </LinkContainer>
                      </Link>
                      <a href = 'https://drive.google.com/file/d/15I7pu_6iLF3HoYZej2xUHpPHhAGLcssU/view' >
-                           <LinkContainer>
-                        <FontAwesomeIcon icon={faFile} />
-                        Resume
+                        <LinkContainer>
+                           <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={faFile} />
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>Resume</h2>
+                           </LinkTextContainer>
+                           
                         </LinkContainer>
                      </a>
                   </MenuLinks>
