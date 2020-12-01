@@ -19,9 +19,9 @@ _____________________
 __________
 #### Style Guide
 **Color Scheme** 
-| Color       | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| ![#120078](/projectassets/120078.png)   |dhshshh | $1600 |
-| ![#9D0191](/projectassets/9D0191.png) | centered      |   $12 |
-| ![#FD3A69](/projectassets/FD3A69.png)| are neat      |    $1 |
-| ![#FECD1A](/projectassets/FECD1A.png)| are neat      |    $1 |
+| Color                                 | Components    | Additions     |
+| ------------------------------------- |:-------------:| -------------:|
+| ![#120078](/projectassets/120078.png) | add something | add something |
+| ![#9D0191](/projectassets/9D0191.png) | add something | add something |
+| ![#FD3A69](/projectassets/FD3A69.png) | add something | add something |
+| ![#FECD1A](/projectassets/FECD1A.png) | add something | add something |

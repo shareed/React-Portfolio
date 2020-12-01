@@ -5,7 +5,7 @@ import Dashboard from './dashboard/dashboard';
 
 const AppDiv = styled.div` 
   height: 100vh;
-  background: #000000;
+  background: #FECD1A;
   `
 
 function App() {

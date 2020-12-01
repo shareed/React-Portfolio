@@ -16,7 +16,7 @@ const HamburgerButton = styled.div`
     position: relative;
     z-index: 99;
     .fa-bars {
-    color: #54e346;
+    color: #FECD1A;
     font-size: 40px;
     cursor: pointer;
     background: #120078; 
@@ -27,23 +27,34 @@ const HamburgerButton = styled.div`
     `
 
 const CloseButton = styled.div` 
-    margin: 0 0 40px 0;
+    margin: 0 0 0px 0;
     display: flex;
     justify-content: flex-start;
     .fa-times {
-    color: #6f4a8e;
+    color: #FECD1A;
     font-size: 40px;
     cursor: pointer;
-    background: #050505; 
-    padding: 5px;
+    background: #120078; 
+    padding: 9px;
 
 
 }
     `
 
 const HamburgerMenuNav = styled.nav` 
-    .show{
-        left: 0;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    left: -70vw;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+    @media(min-width: 400px) {
+        width: 40vw;
+    }
+    @media(min-width: 600px) {
+        width: 30vw;
     }
     `
 

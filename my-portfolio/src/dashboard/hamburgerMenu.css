@@ -21,7 +21,7 @@
 
 } */
 
-.hamburger-menu-nav {
+/* .hamburger-menu-nav {
     width: 50vw;
     position: absolute;
     top: 0;
@@ -30,9 +30,9 @@
     -webkit-transition: left 0.3s ease-in;
     -o-transition: left 0.3s ease-in;
     transition: left 0.3s ease-in;
-}
+} */
 
-@media(min-width: 400px) {
+/* @media(min-width: 400px) {
     .hamburger-menu-nav {
         width: 40vw;
     }
@@ -43,7 +43,7 @@
         width: 30vw;
     }
 
-}
+} */
 
 /* .hamburger-menu-nav {
     width: 10vw;

@@ -22,9 +22,13 @@ const Dashdiv = styled.div`
    @media(min-width: 800px){
       display: inline;
       height: 100vh;
-      background-color: red;
+      background-color: #120078;
       font-size: 32px;
       color: white;
+      a {
+         text-decoration: none;
+         color: white;
+      }
 
    }
    
