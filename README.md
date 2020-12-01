@@ -18,4 +18,10 @@ _____________________
 - Font Awesome
 __________
 #### Style Guide
-**Color Scheme** ![Color Scheme](/projectassets/colorsch.png)
+**Color Scheme** 
+| Color       | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| ![#120078](/projectassets/120078.png)   |dhshshh | $1600 |
+| ![#9D0191](/projectassets/9D0191.png) | centered      |   $12 |
+| ![#FD3A69](/projectassets/FD3A69.png)| are neat      |    $1 |
+| ![#FECD1A](/projectassets/FECD1A.png)| are neat      |    $1 |

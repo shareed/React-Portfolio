@@ -31,6 +31,7 @@ const Dashdiv = styled.div`
 `;
 
 
+
 function Dashboard() {
      return (
         <Portfolio>
@@ -46,7 +47,7 @@ function Dashboard() {
                   <Link>Skills</Link>
                   <Link>About</Link>
            </Dashdiv>
-        
+          
         {/* <Menu/>
         <Projects/>
         <Skills/>
