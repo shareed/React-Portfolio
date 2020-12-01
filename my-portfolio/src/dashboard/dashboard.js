@@ -58,18 +58,6 @@ const Dashdiv = styled.div`
    @media(min-width: 1600px){
       width: 18vw;
    }
-   /* @media(min-width: 1700px){
-      width: 16vw;
-   } */
-   /* @media(min-width: 1800px){
-      width: 14vw;
-   } */
-   /* @media(min-width: 1900px){
-      width: 12vw;
-   }
-   @media(min-width: 2000px){
-      width: 10vw;
-   } */
    
 `
 
@@ -114,9 +102,13 @@ const Icons = styled.div`
    margin-top: .7rem; 
    display:flex;
    justify-content: space-between;
+   :hover{
+      cursor: pointer;
+   }
    `
 
-const LinkContainer = styled.div` 
+const LinkContainer = styled.div`
+padding-left: 4rem; 
    display: flex;
    `
 
