@@ -11,8 +11,9 @@ const Container = styled.div`
     position: relative;
     @media(min-width: 800px) {
         display: none;
-    }
-    `
+    }`
+
+
 const HamburgerButton = styled.div` 
     position: relative;
     z-index: 99;
@@ -22,10 +23,7 @@ const HamburgerButton = styled.div`
     cursor: pointer;
     background: #120078; 
     padding: .5rem;
-
-
-}
-    `
+    }`
 
 const CloseButton = styled.div` 
     top: 20;

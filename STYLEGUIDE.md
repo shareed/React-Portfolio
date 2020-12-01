@@ -26,3 +26,7 @@
 
 - App background
 - Icons text color
+
+- Menu
+    - [ ] Hamburger Menu
+    - [ ] Dashboard Menu
