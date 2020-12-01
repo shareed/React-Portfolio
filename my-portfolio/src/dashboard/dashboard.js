@@ -1,21 +1,57 @@
-import React from 'react';
+import { Route } from 'react-router';
+import { Link } from 'react-router-dom';
 
+
+import styled from "styled-components";
+
+
+import HamburgerMenu from './hamburgerMenu'
 import Home from '../components/Home';
 import Menu from '../components/Menu';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import About from '../components/About';
 
+
+const Portfolio = styled.div`
+   display: flex;
+`;
+
+const Dashdiv = styled.div`
+   display: none;
+   @media(min-width: 800px){
+      display: inline;
+      height: 100vh;
+      background-color: red;
+      font-size: 32px;
+      color: white;
+
+   }
+   
+`;
+
+
 function Dashboard() {
      return (
-        <div>
-        <h2>Dashboard</h2>
-        <Home/>
+        <Portfolio>
+           <HamburgerMenu />
+           <Dashdiv >
+                  <Link>
+                  <h2>Dashboard</h2>
+                  </Link>
+               
+                  <Link>Home</Link>
+                  <Link>Menu</Link>
+                  <Link>Projects</Link>
+                  <Link>Skills</Link>
+                  <Link>About</Link>
+           </Dashdiv>
+        
         <Menu/>
         <Projects/>
         <Skills/>
         <About/>
-        </div>
+        </Portfolio>
      )
   }
 export default Dashboard;

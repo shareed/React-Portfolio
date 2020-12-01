@@ -1,13 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route } from 'react-router';
+// import './App.css';
+import styled from "styled-components";
 import Dashboard from './dashboard/dashboard';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-              <Dashboard />
+        <Route path='/' component={Dashboard} />
       </header>
     </div>
   );
