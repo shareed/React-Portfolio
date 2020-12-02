@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Dashboard from './dashboard/dashboard';
 
 const AppDiv = styled.div` 
+margin: 0;
+padding: 0;
   height: 100vh;
   background: #FECD1A;
   `

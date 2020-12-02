@@ -1,5 +1,5 @@
 import { Route } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, Switch } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faProjectDiagram, faTasks, faFile, faIdCard } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +14,7 @@ import Menu from '../components/Menu';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import About from '../components/About';
-
+import Contact from '../components/Contact';
 
 const Portfolio = styled.div`
    display: flex;
@@ -23,7 +23,6 @@ const Portfolio = styled.div`
 const Dashdiv = styled.div`
    display: none;
    @media(min-width: 800px){
-      /* position: absolute; */
       display: inline;
       flex-basis: 30;
       height: 100vh;
@@ -66,12 +65,6 @@ const Dashdiv = styled.div`
    @media(min-width: 1800px){
       width: 14vw;
    }
-   /* @media(min-width: 1900px){
-      width: 12vw;
-   }
-   @media(min-width: 2000px){
-      width: 10vw;
-   } */
    
 `
 
@@ -119,18 +112,12 @@ const MyIntroDev= styled.h2`
    font-size: 1.4rem;
    text-align: center;
    padding-top: .5rem;
-   /* @media(min-width: 900px){
-      font-size: 1.3rem;
-   }
-   @media(min-width: 1000px){
-      font-size: 1.4rem;
-   } */
 
    `
 
 const LinkContainer = styled.div`
-padding-left: 1rem; 
-padding-right: 1rem;
+   padding-left: 1rem; 
+   padding-right: 1rem;
    display: flex;
    `
 
@@ -162,7 +149,7 @@ const MenuLinks = styled.div`
 
 const BottomIcons = styled.div`
    font-size: 2rem;
-   margin: 35rem 2rem 0 2rem; 
+   margin: 5rem 2rem 0 2rem; 
    display:flex;
    justify-content: space-between;
    color: #FECD1A;
@@ -187,7 +174,7 @@ function Dashboard() {
                </IntroDiv>
              </Header>
                   <MenuLinks >
-                     <Link>
+                     <Link to = '/'>
                         <LinkContainer>
                            
                            <LinkIconContainer >
@@ -199,7 +186,7 @@ function Dashboard() {
                           
                         </LinkContainer>
                      </Link>
-                     <Link>
+                     <Link to = '/projects'>
                         <LinkContainer>
                            <LinkIconContainer >
                               <FontAwesomeIcon className='menu-icon' icon={faProjectDiagram} />
@@ -210,7 +197,7 @@ function Dashboard() {
                            
                         </LinkContainer>
                      </Link>
-                     <Link>
+                     <Link to = '/skills'>
                         <LinkContainer>
                            <LinkIconContainer >
                               <FontAwesomeIcon className='menu-icon' icon={faTasks} />
@@ -221,7 +208,7 @@ function Dashboard() {
                            
                         </LinkContainer>
                      </Link>
-                     <Link>
+                     <Link to = '/contact'>
                         <LinkContainer>
                            <LinkIconContainer >
                               <FontAwesomeIcon className='menu-icon' icon={faIdCard}/>
@@ -232,7 +219,7 @@ function Dashboard() {
                            
                         </LinkContainer>
                      </Link>
-                     <Link>
+                     <Link to ='/about'>
                         <LinkContainer>
                            <LinkIconContainer >
                               <FontAwesomeIcon className='menu-icon' icon={faUser}/>
@@ -266,7 +253,17 @@ function Dashboard() {
         <Projects/>
         <Skills/>
         <About/> */}
-        <Home />
+        <div>
+        <Switch>
+                        <Route exact path="/" component= { Home } />
+                        <Route path="/projects" component={ Projects} />
+
+                        <Route path="/skills" component= { Skills } />
+                        <Route path ='/about' component = { About} />
+                        <Route path ='/contact' component = {Contact } />
+
+                  </Switch>
+        </div>
         </Portfolio>
      )
   }
