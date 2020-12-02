@@ -8,7 +8,7 @@ import styled from "styled-components";
 import './hamburgerMenu.css';
 
 const Container = styled.div`
-    position: relative;
+    position: absolute;
     @media(min-width: 800px) {
         display: none;
     }`

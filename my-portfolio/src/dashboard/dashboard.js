@@ -2,7 +2,7 @@ import { Route } from 'react-router';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faProjectDiagram, faTasks, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faProjectDiagram, faTasks, faFile, faIdCard } from '@fortawesome/free-solid-svg-icons'
 import me from '../assets/me.jpg';
 
 import styled from "styled-components";
@@ -23,9 +23,11 @@ const Portfolio = styled.div`
 const Dashdiv = styled.div`
    display: none;
    @media(min-width: 800px){
+      /* position: absolute; */
       display: inline;
+      flex-basis: 30;
       height: 100vh;
-      width: 35vw;
+      width: 30vw;
       background-color: #120078;
       a {
          text-decoration: none;
@@ -58,13 +60,26 @@ const Dashdiv = styled.div`
    @media(min-width: 1600px){
       width: 18vw;
    }
+   @media(min-width: 1700px){
+      width: 16vw;
+   }
+   @media(min-width: 1800px){
+      width: 14vw;
+   }
+   /* @media(min-width: 1900px){
+      width: 12vw;
+   }
+   @media(min-width: 2000px){
+      width: 10vw;
+   } */
    
 `
 
 const Header = styled.header` 
-   margin-bottom: 2rem;
+   margin-bottom: 5rem;
    padding: 1rem;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    color: #FECD1A;
@@ -80,35 +95,42 @@ const MyImage = styled.img`
    `
 
 const IntroDiv = styled.div` 
-   flex-basis: 70%;
-   margin-left: 2rem;
+   /* flex-basis: 70%; */
+   /* margin-left: 2rem; */
    `
 
 const MyNameIntro= styled.h2`
    border-bottom: .2rem dotted #FECD1A;
-   font-size: 2rem;
+   font-size: 2.5rem;
    text-align: center;
    padding-bottom: .5rem;
+   /* @media(min-width: 900px){
+      font-size: 2rem;
+   }
+   @media(min-width: 1000px){
+      font-size: 2.2rem;
+   }
+   @media(min-width: 1100px){
+      font-size: 2.4rem;
+   } */
    `
 
-const MyIntro= styled.h2`
-   font-size: 1.2rem;
+const MyIntroDev= styled.h2`
+   font-size: 1.4rem;
    text-align: center;
    padding-top: .5rem;
-   `
-
-const Icons = styled.div`
-   font-size: 2rem;
-   margin-top: .7rem; 
-   display:flex;
-   justify-content: space-between;
-   :hover{
-      cursor: pointer;
+   /* @media(min-width: 900px){
+      font-size: 1.3rem;
    }
+   @media(min-width: 1000px){
+      font-size: 1.4rem;
+   } */
+
    `
 
 const LinkContainer = styled.div`
-padding-left: 4rem; 
+padding-left: 1rem; 
+padding-right: 1rem;
    display: flex;
    `
 
@@ -138,6 +160,17 @@ const MenuLinks = styled.div`
    }
 `
 
+const BottomIcons = styled.div`
+   font-size: 2rem;
+   margin: 35rem 2rem 0 2rem; 
+   display:flex;
+   justify-content: space-between;
+   color: #FECD1A;
+   :hover{
+      cursor: pointer;
+   }
+   `
+
 
 function Dashboard() {
      return (
@@ -147,15 +180,10 @@ function Dashboard() {
               <Header>
                <ImageIcons>
                   <MyImage src = { me }/>
-                  <Icons>
-                     <FontAwesomeIcon icon={faTwitter} />
-                     <FontAwesomeIcon icon={faLinkedin} />
-                     <FontAwesomeIcon icon={faGithub} />
-                  </Icons>
                </ImageIcons>
                <IntroDiv>
                   <MyNameIntro>Shannon Reed</MyNameIntro>
-                  <MyIntro>Full Stack Web Developer</MyIntro>
+                  <MyIntroDev>Full Stack Web Developer</MyIntroDev>
                </IntroDiv>
              </Header>
                   <MenuLinks >
@@ -196,6 +224,17 @@ function Dashboard() {
                      <Link>
                         <LinkContainer>
                            <LinkIconContainer >
+                              <FontAwesomeIcon className='menu-icon' icon={faIdCard}/>
+                           </LinkIconContainer>
+                           <LinkTextContainer>
+                              <h2>Contact</h2>
+                           </LinkTextContainer>
+                           
+                        </LinkContainer>
+                     </Link>
+                     <Link>
+                        <LinkContainer>
+                           <LinkIconContainer >
                               <FontAwesomeIcon className='menu-icon' icon={faUser}/>
                            </LinkIconContainer>
                            <LinkTextContainer>
@@ -216,12 +255,18 @@ function Dashboard() {
                         </LinkContainer>
                      </a>
                   </MenuLinks>
+                  <BottomIcons>
+                     <FontAwesomeIcon icon={faTwitter} />
+                     <FontAwesomeIcon icon={faLinkedin} />
+                     <FontAwesomeIcon icon={faGithub} />
+                  </BottomIcons>
            </Dashdiv>
           
         {/* <Menu/>
         <Projects/>
         <Skills/>
         <About/> */}
+        <Home />
         </Portfolio>
      )
   }
