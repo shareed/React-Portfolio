@@ -1,5 +1,5 @@
 import { Route } from 'react-router';
-import { Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faProjectDiagram, faTasks, faFile, faIdCard } from '@fortawesome/free-solid-svg-icons'
@@ -9,15 +9,11 @@ import styled from "styled-components";
 
 
 import HamburgerMenu from './hamburgerMenu'
-import Home from '../components/Home';
-import Menu from '../components/Menu';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import About from '../components/About';
-import Contact from '../components/Contact';
+
 
 const Portfolio = styled.div`
    display: flex;
+   
 `
 
 const Dashdiv = styled.div`
@@ -157,7 +153,10 @@ const BottomIcons = styled.div`
       cursor: pointer;
    }
    `
-
+const Contents = styled.div` 
+ display:flex;
+ flex-direction: column;
+ `
 
 function Dashboard() {
      return (
@@ -174,7 +173,7 @@ function Dashboard() {
                </IntroDiv>
              </Header>
                   <MenuLinks >
-                     <Link to = '/'>
+                     <Link to = '/home'>
                         <LinkContainer>
                            
                            <LinkIconContainer >
@@ -249,20 +248,9 @@ function Dashboard() {
                   </BottomIcons>
            </Dashdiv>
           
-        {/* <Menu/>
-        <Projects/>
-        <Skills/>
-        <About/> */}
+        
         <div>
-        <Switch>
-                        <Route exact path="/" component= { Home } />
-                        <Route path="/projects" component={ Projects} />
-
-                        <Route path="/skills" component= { Skills } />
-                        <Route path ='/about' component = { About} />
-                        <Route path ='/contact' component = {Contact } />
-
-                  </Switch>
+        
         </div>
         </Portfolio>
      )
