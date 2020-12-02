@@ -6,55 +6,70 @@ import styled from "styled-components";
 
 
 import './hamburgerMenu.css';
+
 const Container = styled.div`
-    position: relative;
+    position: absolute;
     @media(min-width: 800px) {
         display: none;
-    }
-    `
+    }`
+
+
 const HamburgerButton = styled.div` 
     position: relative;
     z-index: 99;
     .fa-bars {
-    color: #54e346;
-    font-size: 40px;
+    color: #FECD1A;
+    font-size: 4rem;
     cursor: pointer;
     background: #120078; 
-    padding: 5px;
-
-
-}
-    `
+    padding: .5rem;
+    }`
 
 const CloseButton = styled.div` 
-    margin: 0 0 40px 0;
+    top: 20;
+    margin: 0 0 0 0;
     display: flex;
     justify-content: flex-start;
     .fa-times {
-    color: #6f4a8e;
-    font-size: 40px;
+    color: #FECD1A;
+    font-size: 4rem;
     cursor: pointer;
-    background: #050505; 
-    padding: 5px;
-
-
+    background: #120078; 
+    width: 50vw;
+    padding: .9rem 0rem .9rem 0rem;
+    @media(min-width: 400px) {
+        width: 40vw;
+    }
+    @media(min-width: 600px) {
+        width: 30vw;
+    }
 }
     `
 
 const HamburgerMenuNav = styled.nav` 
-    .show{
-        left: 0;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    left: -70vw;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+    @media(min-width: 400px) {
+        width: 40vw;
+    }
+    @media(min-width: 600px) {
+        width: 30vw;
     }
     `
 
 const MenuList = styled.ul` 
-    background: #221F3B;
+    background: #120078;
     padding: 0;
-    margin-top: 1.8rem;
+    margin-top: 0rem;
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
-    margin-left: -10px;
     `
 
 const MenuListItem = styled.li` 

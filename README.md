@@ -1,7 +1,17 @@
 # React-Portfolio
 Shannon Reed Web Developer Portfolio
+**Goal:** A project to showcase my skills and projects
+**Target Group:** Employers
+______________________________
 
-BoothStrapped with CRA
+
+#### Dependecies
+- BoothStrapped with CRA
+- React Router
+- React Router Dom
+- Styled Components
+- Font Awesome
+__________
 
 ## Pages
 
@@ -10,18 +20,9 @@ BoothStrapped with CRA
 ### Contact
 ### Resume
 ### About
-_____________________
-#### Dependecies
-- React Router
-- React Router Dom
-- Styled Components
-- Font Awesome
-__________
-#### Style Guide
-**Color Scheme** 
-| Color       | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| ![#120078](/projectassets/120078.png)   |dhshshh | $1600 |
-| ![#9D0191](/projectassets/9D0191.png) | centered      |   $12 |
-| ![#FD3A69](/projectassets/FD3A69.png)| are neat      |    $1 |
-| ![#FECD1A](/projectassets/FECD1A.png)| are neat      |    $1 |
+
+##### Week 1
+- Menu
+    - [ ] Hamburger Menu
+    - [ ] Dashboard Menu
+- Dashboard

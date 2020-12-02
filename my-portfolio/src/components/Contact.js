@@ -1,12 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-
-
-function Menu() {
+function Contact() {
      return (
-        <div>
-        <h2>Menu</h2>
-        </div>
+        <>
+        </>
      )
   }
-export default Menu;
+export default Contact;
